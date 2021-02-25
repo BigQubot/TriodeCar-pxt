@@ -1,14 +1,11 @@
-
-let qcarparam = 0
-let qcarparam1 = 1
 enum PingUnit {
     //% block="cm"
     Centimeters,
 }
 
 
-//% weight=0 color=#00BFFF icon="\uf2c4" block="Qcar"
-namespace qcar {
+//% weight=0 color=#00BFFF icon="\uf2c4" block="TriodeCar"
+namespace triodecar {
 
     export enum Patrol {
         //% blockId="patrolLeft" block="left"
