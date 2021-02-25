@@ -89,7 +89,7 @@ namespace triodecar {
    //% weight=93 blockGap=8
 
     export function CarDirection(Direction: direction): void {
-        if (Direction == direction.gofoward) {
+        if (Direction == direction.foward) {
             pins.digitalWritePin(DigitalPin.P14, 0)    //left
             pins.digitalWritePin(DigitalPin.P15, 0)    //right
         } 
@@ -97,11 +97,11 @@ namespace triodecar {
             pins.digitalWritePin(DigitalPin.P14, 1)    //left
             pins.digitalWritePin(DigitalPin.P15, 1)    //right
        } 
-        else if (Direction == direction.turnleft) {
+        else if (Direction == direction.left) {
             pins.digitalWritePin(DigitalPin.P14, 1)    //left
             pins.digitalWritePin(DigitalPin.P15, 0)    //right
        }  
-       else if (Direction == direction.turnright) {
+       else if (Direction == direction.right) {
             pins.digitalWritePin(DigitalPin.P14, 0)    //left
             pins.digitalWritePin(DigitalPin.P15, 1)    //right
        } 
