@@ -16,14 +16,14 @@ namespace triodecar {
 
 
     export enum direction {
-        //% blockId="gofoward" block="foward"
-        gofoward = 1,
+        //% blockId="foward" block="go foward"
+        foward = 1,
         //% blockId="stop" block="stop"
         stop = 2,
-        //% blockId="turnleft" block="left"
-        turnleft = 3,
-        //% blockId="turnright" block="right"
-        turnright = 4,
+        //% blockId="turnleft" block="turn left"
+        left = 3,
+        //% blockId="turnright" block="turn right"
+        right = 4,
     }
 
 
@@ -84,7 +84,7 @@ namespace triodecar {
     * Enable IR LED.
     */
 
-   //% blockId=IR_Enable block="Set the TriodeCar |%direction"
+   //% blockId=IR_Enable block="let the TriodeCar |%direction"
    //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=4 
    //% weight=93 blockGap=8
 
