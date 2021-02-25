@@ -4,7 +4,7 @@ enum PingUnit {
 }
 
 
-//% weight=0 color=#FF7256 icon="\uf63b" block="TriodeCar"
+//% weight=0 color=#FF7256 icon="\uf1b9" block="TriodeCar"
 namespace triodecar {
 
     export enum Patrol {
