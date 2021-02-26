@@ -81,7 +81,7 @@ namespace triodecar {
 
 
    /**
-    * Enable IR LED.
+    * CarDirection.
     */
 
    //% blockId=IR_Enable block="let the TriodeCar |%direction"
