@@ -1,11 +1,12 @@
 {
-    "Ultrasonic|block": "超声波距离|%unit",
-    "Patrol.PatrolLeft|block": "左侧",
-    "Patrol.PatrolRight|block": "右侧",
-    "readPatrol|block": "巡线传感器|%patrol",
-    "direction.gofoward|block": "前进",
-    "direction.stop|block": "停止",
-    "direction.turnleft|block": "左拐",
-    "direction.turnright|block": "右拐",
-    "CarDirection|block":"让TriodeCar |%direction",
+    "triodecar|block": "TriodeCar",
+    "triodecar.Ultrasonic|block": "超声波距离|%unit",
+    "triodecar.Patrol.PatrolLeft|block": "左侧",
+    "triodecar.Patrol.PatrolRight|block": "右侧",
+    "triodecar.readPatrol|block": "巡线传感器|%patrol",
+    "triodecar.CarDirection|block":"让TriodeCar |%direction",
+    "triodecar.direction.gofoward|block": "前进",
+    "triodecar.direction.stop|block": "停止",
+    "triodecar.direction.turnleft|block": "左拐",
+    "triodecar.direction.turnright|block": "右拐"
 }
