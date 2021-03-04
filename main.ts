@@ -26,6 +26,13 @@ namespace triodecar {
         right = 4,
     }
 
+    export enum motor {
+        //% blockId="leftmotor" block="Left Motor"
+        left = 1,
+        //% blockId="rightmotor" block="Left Motor"
+        right = 2,
+    }
+
 
     /**
      * Read ultrasonic sensor.
@@ -84,7 +91,7 @@ namespace triodecar {
     * CarDirection.
     */
 
-   //% blockId=IR_Enable block="move direction |%direction"
+   //% blockId=IR_Enable block="let the car |%direction" at speed |%speed"
    //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=4 
    //% weight=93 blockGap=8
 
@@ -107,4 +114,21 @@ namespace triodecar {
        } 
    }
 
+
+    /**
+     * Set the speed of Triode-Car motor.
+     */
+
+    //% weight=90
+    //% blockId=motor_MotorRun block="motor|%motor|move Foward at speed|%speed"
+    //% speed.min=0 speed.max=100
+    //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2
+    export function motorRun(Motor: motors, speed: number): void {
+        let pulsetime = Math.map(speed, 0, 100, 8000, 20000)
+        if (Motor == motor.leftmotor) {
+            servoSetPulse(DigitalPin.P14, pulsetime)
+        } 
+        if (Motor == motor.rightmotor) {
+            servoSetPulse(DigitalPin.P15, pulsetime)
+        } 
 }
