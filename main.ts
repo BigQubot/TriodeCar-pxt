@@ -121,7 +121,7 @@ namespace triodecar {
 
     //% weight=90
     //% blockId=motor_MotorRun block="motor|%motor|move Foward at speed|%speed"
-    //% speed.min=1 speed.max=5
+    //% speed.min=1 speed.max=10
     //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2
     export function motorRun(Motor: motor, speed: number = 5): void {
         let pulsetime = Math.map(speed, 0, 10, 12000, 0)
