@@ -131,4 +131,5 @@ namespace triodecar {
         if (Motor == motor.rightmotor) {
             servoSetPulse(DigitalPin.P15, pulsetime)
         } 
+    }
 }
