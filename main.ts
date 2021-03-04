@@ -124,7 +124,7 @@ namespace triodecar {
     //% speed.min=1 speed.max=5
     //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2
     export function motorRun(Motor: motor, speed: number = 5): void {
-        let pulsetime = Math.map(speed, 1, 5, 10000, 0)
+        let pulsetime = Math.map(speed, 0, 10, 12000, 0)
         if (Motor == motor.left) {
             pins.servoSetPulse(AnalogPin.P14, pulsetime)
         } 
