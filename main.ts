@@ -63,7 +63,7 @@ namespace triodecar {
     export function CarDirection(Direction: direction): void {
         if (Direction == direction.foward) {
             pins.servoSetPulse(AnalogPin.P14, 4000)    //left
-            pins.servoSetPulse(AnalogPin.P14, 4000)    //right
+            pins.servoSetPulse(AnalogPin.P15, 4000)    //right
         } 
         else if (Direction == direction.stop) {
             pins.digitalWritePin(DigitalPin.P14, 1)    //left
