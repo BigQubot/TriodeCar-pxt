@@ -29,7 +29,7 @@ namespace triodecar {
     export enum motor {
         //% blockId="leftmotor" block="Left Motor"
         left = 1,
-        //% blockId="rightmotor" block="Left Motor"
+        //% blockId="rightmotor" block="Right Motor"
         right = 2,
     }
 
@@ -85,7 +85,7 @@ namespace triodecar {
      */
 
     //% weight=90
-    //% blockId=motor_MotorRun block="motor|%motor|move Foward at speed|%speed"
+    //% blockId=motor_MotorRun block="|%motor|move Foward at speed|%speed"
     //% speed.min=0 speed.max=10
     //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2
     export function motorRun(Motor: motor, speed: number = 5): void {
