@@ -91,7 +91,7 @@ namespace triodecar {
     * CarDirection.
     */
 
-   //% blockId=IR_Enable block="let the car |%direction" at speed |%speed"
+   //% blockId=IR_Enable block="let the car |%direction"
    //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=4 
    //% weight=93 blockGap=8
 
@@ -124,12 +124,22 @@ namespace triodecar {
     //% speed.min=0 speed.max=10
     //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2
     export function motorRun(Motor: motor, speed: number = 5): void {
-        let pulsetime = Math.map(speed, 0, 10, 12000, 0)
+        let pulsetime = Math.map(speed, 1, 10, 12000, 0)
         if (Motor == motor.left) {
-            pins.servoSetPulse(AnalogPin.P14, pulsetime)
+            if (speed == 0) {
+                 pins.digitalWritePin(DigitalPin.P14, 1)    //left
+            } 
+            else {
+                pins.servoSetPulse(AnalogPin.P14, pulsetime)
+            } 
         } 
         if (Motor == motor.right) {
-            pins.servoSetPulse(AnalogPin.P15, pulsetime)
+            if (speed == 0) {
+                 pins.digitalWritePin(DigitalPin.P15, 1)    //right
+            } 
+            else {
+                pins.servoSetPulse(AnalogPin.P15, pulsetime)
+            } 
         } 
     }
 }
