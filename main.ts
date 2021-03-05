@@ -115,7 +115,6 @@ namespace triodecar {
 
     //% blockId=ultrasonic_sensor block="read ultrasonic sensor |%unit "
     //% weight=95
-    //% block advanced=true
     export function Ultrasonic(unit: PingUnit, maxCmDistance = 500): number {
         let d
         pins.digitalWritePin(DigitalPin.P12, 1);
