@@ -16,13 +16,13 @@ namespace triodecar {
 
 
     export enum direction {
-        //% blockId="foward" block="foward"
+        //% blockId="foward" block="go foward"
         foward = 1,
         //% blockId="stop" block="stop"
         stop = 2,
-        //% blockId="turnleft" block="left"
+        //% blockId="turnleft" block="turn left"
         left = 3,
-        //% blockId="turnright" block="right"
+        //% blockId="turnright" block="turn right"
         right = 4,
     }
 
